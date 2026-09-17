@@ -1,0 +1,25 @@
+{
+  "name": "task8-crm",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:client": "vite",
+    "dev:server": "node --watch server/index.js",
+    "dev": "concurrently \"npm:dev:server\" \"npm:dev:client\"",
+    "build": "vite build",
+    "start": "npm run build && node server/index.js",
+    "demo": "node server/demo-test.js"
+  },
+  "dependencies": {
+    "antd": "^5.21.6",
+    "express": "^4.21.1",
+    "pg": "^8.13.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
+    "concurrently": "^9.0.1",
+    "vite": "^5.4.10"
+  }
+}
