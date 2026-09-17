@@ -3,11 +3,18 @@ import { calculatePartnerDiscount } from './discount.js';
 
 export async function getPartnerWithDiscount(partnerId) {
   const sql = `
-    SELECT p.partner_id, p.company_name, COALESCE(SUM(s.quantity), 0) AS total_quantity
-    FROM partners p
-    LEFT JOIN sales_history s ON s.partner_id = p.partner_id
-    WHERE p.partner_id = $1
-    GROUP BY p.partner_id, p.company_name`;
+    SELECT 
+        p.partner_id, p.company_name, 
+        COALESCE(SUM(s.quantity), 0) AS total_quantity
+    FROM 
+        partners p
+    LEFT JOIN 
+        sales_history s ON s.partner_id = p.partner_id
+    WHERE 
+        p.partner_id = $1
+    GROUP BY 
+        p.partner_id, p.company_name
+  `;
 
   const { rows } = await pool.query(sql, [partnerId]);
   if (rows.length === 0) {
