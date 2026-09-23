@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", -apple-system, Roboto, Arial, sans-serif;
+  background: #f5f6f7;
+}
+
+.app {
+  min-height: 100vh;
+  background: #f5f6f7;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  height: auto;
+  line-height: normal;
+  padding: 12px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.app-header__logo {
+  height: 40px;
+}
+
+.container {
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 28px 24px;
+}
+
+.page-title.ant-typography {
+  color: #34515e;
+  margin-bottom: 20px;
+}
+
+.page-head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.page-head .page-title {
+  margin-bottom: 0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-card {
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  max-width: 480px;
+}
+
+.partner-card {
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+}
+
+.partner-card .ant-card-body {
+  padding: 18px 22px;
+}
+
+.partner-card__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.partner-card__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1c1c1c;
+  margin-bottom: 8px;
+}
+
+.partner-card__line {
+  font-size: 13px;
+  color: #8a8a8a;
+  line-height: 1.55;
+}
+
+.partner-card__discount {
+  font-size: 18px;
+  color: #1c1c1c;
+  white-space: nowrap;
+  margin-left: 16px;
+}

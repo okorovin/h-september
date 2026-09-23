@@ -1,5 +1,4 @@
--- импорт очищенных данных (запускать из папки task3)
-
+-- импорт очищенных данных
 TRUNCATE TABLE sales_history, products, partners RESTART IDENTITY CASCADE;
 
 -- партнёры
