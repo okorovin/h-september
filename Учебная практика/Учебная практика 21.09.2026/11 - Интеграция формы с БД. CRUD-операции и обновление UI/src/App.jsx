@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Layout } from 'antd';
 import MainWindow from './windows/MainWindow.jsx';
 import PartnerEditWindow from './windows/PartnerEditWindow.jsx';
-import logo from './assets/logo.svg';
+import logo from './assets/logo.png';
 
 const { Header, Content } = Layout;
 

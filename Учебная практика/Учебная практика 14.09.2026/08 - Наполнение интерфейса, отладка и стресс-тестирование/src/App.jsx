@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Layout, Typography, Spin, Alert } from 'antd';
 import PartnerCard from './components/PartnerCard.jsx';
-import logo from './assets/logo.svg';
+import logo from './assets/logo.png';
 
 const { Header, Content } = Layout;
 const { Title } = Typography;

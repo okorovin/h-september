@@ -1,7 +1,7 @@
 import { Layout, Typography } from 'antd';
 import PartnerCard from './components/PartnerCard.jsx';
 import { partners } from './data/partners.js';
-import logo from './assets/logo.svg';
+import logo from './assets/logo.png';
 
 const { Header, Content } = Layout;
 const { Title } = Typography;
