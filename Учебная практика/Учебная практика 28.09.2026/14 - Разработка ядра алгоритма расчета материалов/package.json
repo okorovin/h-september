@@ -1,0 +1,11 @@
+{
+  "name": "material-calc",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "demo": "node demo.js"
+  },
+  "dependencies": {
+    "pg": "^8.13.1"
+  }
+}
